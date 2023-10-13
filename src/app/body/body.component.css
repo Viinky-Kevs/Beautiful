@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap');
+
+.sheet-principal {
+    width: 98%;
+    height: 100%;
+    padding: 0.5rem;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sheet {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: inherit;
+}
+
+.container-photos {
+    width: 70%;
+}
+
+.container-photos h1 {
+    text-align: center;
+    color: #125B50;
+    font-family: 'Tilt Neon', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+  
+.image-slider img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.btn-previus,
+.btn-next {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.container-lyrics {
+    width: 30%;
+}
+
+.container-lyrics h1 {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.title-lyrics {
+    text-align: center;
+    color: #125B50;
+}
+
+.lyrics {
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    background-color: #FAF5E4;
+    border-radius: 15px;
+}
+
+.lyrics::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 15px;
+	background-color: #FAF5E4;
+}
+
+.lyrics::-webkit-scrollbar {
+	width: 6px;
+	background-color: #FAF5E4;
+}
+
+.lyrics::-webkit-scrollbar-thumb {
+	background-color: #FF6363;
+}
+
+.lyrics p {
+    text-align: center;
+}
+
+.show {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show button {
+    background-color: #FF6363;
+    border-color: #FF6363;
+    color: #FAF5E4;
+    border-radius: 5px;
+}
+
+.letter {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.paper {
+    width: 70%;
+    height: 50%;
+    background-color: #FAF5E4;
+    box-shadow: 0px 0px 5px 0px #888;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.paper h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.paper p {
+    font-family: 'Dancing Script', cursive;
+}
+
+.icon {
+    font-size: 15px;
+}
+
+.space-div {
+    width: 100%;
+    height: 60px;
+}
+
+@media (max-width:520px){
+    .sheet-principal {
+        width: 96%;
+        height: 100%;
+        min-height: 100%;
+        overflow: auto;
+    }
+
+    .sheet {
+        flex-direction: column;
+    }
+
+    .container-photos,
+    .container-lyrics {
+        width: 100%;
+    }
+
+    .show {
+        margin-top: 0;
+    }
+
+    .paper {
+        width: 100%;
+    }
+}
